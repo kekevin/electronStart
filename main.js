@@ -1,10 +1,14 @@
-const { app, BrowserWindow } = require('electron')
+const Vue =require('vue')
+const ele = require("electron")
+const { app, BrowserWindow } = ele
+
+console.log(Vue);
 
 // 保持对window对象的全局引用，如果不这么做的话，当JavaScript对象被
 // 垃圾回收的时候，window对象将会自动的关闭
 let win
 
-function createWindow () {
+function createWindow() {
   // 创建浏览器窗口。
   win = new BrowserWindow({ width: 800, height: 600 })
 
@@ -47,3 +51,4 @@ app.on('activate', () => {
 
 // 在这个文件中，你可以续写应用剩下主进程代码。
 // 也可以拆分成几个文件，然后用 require 导入。
+// console.log(app);
