@@ -1,3 +1,4 @@
+<!-- 渲染进程 -->
 <!DOCTYPE html>
 <html>
 
@@ -12,18 +13,28 @@
   <script>document.write(process.versions.node)</script>, Chrome
   <script>document.write(process.versions.chrome)</script>, and Electron
   <script>document.write(process.versions.electron)</script>.
-  <input type="button" id="test" value="aaa">
+  <input type="button" id="openNew" value="aaa">
 </body>
 <script>
   var electron = require('electron')
   var remote = electron.remote
   const app = remote.app
-  console.log(app)
-  console.log(app)
-  console.log(app)
-  console.log(app)
-  test.onclick=function(){
+  var screenObj = remote.screen
+  var browser = remote.BrowserWindow
+  var size = screenObj.getPrimaryDisplay().workAreaSize;
+  console.log(size)
+  var win
+
+  openNew.onclick = function () {
     console.log(2111111111111)
+    win = new browser({
+      // height:size.height,
+      // width:size.width,
+      fullscreen: true
+    })
+    // win.loadURL("http://www.baidu.com")
+    win.loadURL(__dirname + '/src/page2.html')
+
   }
 </script>
 

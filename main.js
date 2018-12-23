@@ -1,3 +1,4 @@
+// 这个是主进程
 const Vue =require('vue')
 const ele = require("electron")
 const { app, BrowserWindow } = ele
