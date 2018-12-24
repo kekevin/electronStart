@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 3091ce398060db3ab5d96efcb6ba647ec5bc2792
 =======
 >>>>>>> 3091ce398060db3ab5d96efcb6ba647ec5bc2792
 // // 这个是主进程
@@ -58,6 +61,7 @@
 // // 也可以拆分成几个文件，然后用 require 导入。
 // // console.log(app);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 const Vue =require('vue')
 const ele = require("electron")
@@ -114,5 +118,7 @@ app.on('activate', () => {
 // 也可以拆分成几个文件，然后用 require 导入。
 // console.log(app);
 >>>>>>> parent of 038b39d... openNewWindow
+=======
+>>>>>>> 3091ce398060db3ab5d96efcb6ba647ec5bc2792
 =======
 >>>>>>> 3091ce398060db3ab5d96efcb6ba647ec5bc2792
